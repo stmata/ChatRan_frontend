@@ -40,13 +40,12 @@ jobs:
         with:
           name: node-app
           path: release.zip
+          retention-days: 1
+
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
-    environment:
-      name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     
     
     steps:
