@@ -61,5 +61,5 @@ jobs:
         with:
           app-name: 'app-ranpge-chatbot-frontend-api-prd-01'
           slot-name: 'Production'
-          package: .
+          package: ./dist
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_79E73A5F21324CB685A87AF0980232FE }}
