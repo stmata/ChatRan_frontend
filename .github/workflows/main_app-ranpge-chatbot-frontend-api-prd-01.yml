@@ -59,4 +59,4 @@ jobs:
           app-name: 'app-ranpge-chatbot-frontend-api-prd-01'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_ED4EB943A7BD42BAAC2E28CF47F13119 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1734DF79B8B04D70AB93B73A7DCD8575 }}
