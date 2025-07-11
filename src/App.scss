@@ -1,0 +1,44 @@
+:root {
+  --color-primary: #cf3a34;
+  --color-primary-soft: rgba(231, 67, 60, 0.2);
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #888888;
+  --color-secondary: #171C3F;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--color-primary-soft));
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: var(--color-gray);
+}

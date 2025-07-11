@@ -1,0 +1,45 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    z-index: 1000;
+}
+
+.logo {
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.newButton {
+    margin-right: 15px;
+    margin-top: 15px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 40px;
+
+}
+
+.newButton:hover {
+    background-color: #c53630;
+}
+
+.newButton:focus,
+.newButton:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
