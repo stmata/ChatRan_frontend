@@ -141,15 +141,16 @@ const Chatboot = () => {
             setIsLoading(false);
             setMessages(prev => [...prev, aiMessage]);
         } catch (err) {
+            setIsLoading(false); 
             setMessages(prev => [
                 ...prev,
                 { role: 'assistant', content: '⚠️ AI error, try again.', citations: [] }
             ]);
         }
     };
-    useEffect(() => {
-        chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-    }, [messages, streamedContent]);
+    // useEffect(() => {
+    //     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    // }, [messages, streamedContent]);
 
     return (
         <div className={styles.container}>
